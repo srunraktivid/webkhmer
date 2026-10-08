@@ -1,0 +1,85 @@
+.rueng-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #f6f1e6, #f1ecdf);
+  border-bottom: 1px solid #e3dcc8;
+  font-family: 'Noto Serif Khmer', serif;
+  color: #5a4a30;
+}
+
+.logo img {
+  height: 70px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 52px;
+  padding: 0 18px;
+  background: #fffdf6;
+  border: 1px solid #e6d9a8;
+  border-radius: 10px;
+}
+.search-box i {
+  font-size: 1.2rem;
+  color: #3d3326;
+}
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #5a4a30;
+}
+.search-box input::placeholder {
+  color: #8a7c62;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  color: #5a4a30;
+  cursor: pointer;
+}
+
+.lang img {
+  width: 36px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+.lang span {
+  font-size: 1.1rem;
+}
+
+.login {
+  color: #5a4a30;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+.login:hover {
+  color: #a98842;
+}
+
+.btn-register {
+  background: #a98842;
+  color: #fff8e6;
+  border: 1px solid #8f7234;
+  border-radius: 10px;
+  padding: 12px 22px;
+  font-family: inherit;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-register:hover {
+  background: #94742f;
+}

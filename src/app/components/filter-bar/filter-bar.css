@@ -1,0 +1,39 @@
+.filter-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 18px 16px;
+  font-family: 'Noto Serif Khmer', serif;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-width: 190px;
+  height: 56px;
+  padding: 0 22px;
+  background: #fffdf4;
+  border: 1px solid #e6dcb8;
+  border-radius: 30px;
+  box-shadow: 0 3px 8px rgba(160, 130, 50, 0.12);
+  color: #4a3e2a;
+  font-family: inherit;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+.pill:hover {
+  transform: translateY(-2px);
+  border-color: #c9a64a;
+  box-shadow: 0 6px 14px rgba(160, 130, 50, 0.22);
+}
+.pill.bold {
+  font-weight: 700;
+}
+.small-arrow {
+  font-size: 0.75rem;
+  color: #8a7c62;
+}

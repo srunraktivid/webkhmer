@@ -1,0 +1,11 @@
+<div class="filter-wrap">
+  @for (f of filters; track f.label) {
+    <button class="pill" [class.bold]="f.bold">
+      <i class="bi {{ f.icon }}"></i>
+      <span>{{ f.label }}</span>
+      @if (f.dropdown) {
+        <i class="bi bi-chevron-down small-arrow"></i>
+      }
+    </button>
+  }
+</div>

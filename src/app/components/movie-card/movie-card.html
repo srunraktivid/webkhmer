@@ -1,0 +1,18 @@
+<div class="poster">
+  <img [src]="movie.img" [alt]="movie.title">
+  <div class="shade"></div>
+
+  <div class="info">
+    <h6>{{ movie.title }}</h6>
+    <div class="meta">
+      @if (movie.ai) {
+        <span><i class="bi bi-stars"></i> AI</span>
+      } @else {
+        <span><i class="bi bi-gem"></i> {{ movie.vip ? 'VIP' : 'FREE' }}</span>
+        <span><i class="bi bi-tv"></i> {{ movie.quality }}</span>
+      }
+      <span><i class="bi bi-star"></i> {{ movie.rating }}</span>
+      <span><i class="bi bi-calendar3"></i> {{ movie.year }}</span>
+    </div>
+  </div>
+</div>

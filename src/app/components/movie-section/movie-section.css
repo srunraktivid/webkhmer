@@ -1,0 +1,43 @@
+.section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    font-family: 'Noto Serif Khmer', serif;
+}
+
+.title-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.crown {
+    font-size: 1.8rem;
+    color: #e3b948;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #4a3e2a;
+}
+
+.underline {
+    display: block;
+    width: 56px;
+    height: 2px;
+    margin-top: 4px;
+    background: linear-gradient(90deg, #c9a64a, transparent);
+}
+
+.see-all {
+    color: #8f6f2a;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.see-all:hover {
+    color: #5e4818;
+}

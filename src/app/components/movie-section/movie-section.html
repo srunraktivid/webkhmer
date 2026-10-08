@@ -1,0 +1,20 @@
+<section class="container py-4">
+  <div class="section-head">
+    <div class="title-wrap">
+      <i class="bi {{ icon }} crown"></i>
+      <div>
+        <h3>{{ title }}</h3>
+        <span class="underline"></span>
+      </div>
+    </div>
+    <a href="#" class="see-all">មើលទាំងអស់ <i class="bi bi-chevron-right"></i></a>
+  </div>
+
+  <div class="row g-3">
+    @for (m of movies; track m.title) {
+    <div class="col-6 col-md-4 col-lg-2">
+      <app-movie-card [movie]="m"></app-movie-card>
+    </div>
+    }
+  </div>
+</section>

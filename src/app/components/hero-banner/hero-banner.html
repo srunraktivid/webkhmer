@@ -1,0 +1,30 @@
+
+<section class="hero" [style.background-image]="'url(' + movie.img + ')'">
+  <div class="overlay"></div>
+
+  <div class="content">
+    <span class="rank"><i class="bi bi-fire"></i> {{ movie.rank }}</span>
+
+    <h1>{{ movie.title }}</h1>
+    <p class="desc">{{ movie.description }}</p>
+
+    <div class="badges">
+      <span class="badge-box vip"><i class="bi bi-gem"></i> VIP</span>
+      <span class="badge-box"><i class="bi bi-star-fill gold"></i> {{ movie.rating }}</span>
+      <span class="badge-box vip">{{ movie.quality }}</span>
+      <span class="badge-box"><i class="bi bi-clock"></i> {{ movie.duration }}</span>
+      <span class="badge-box"><i class="bi bi-calendar3"></i> {{ movie.year }}</span>
+    </div>
+
+    <div class="buttons">
+      <button class="btn-play"><i class="bi bi-play-fill"></i> មើលឥឡូវ</button>
+      <button class="btn-list"><i class="bi bi-plus-lg"></i> បញ្ជីរបស់ខ្ញុំ</button>
+    </div>
+  </div>
+
+  <div class="dots">
+    @for (d of dots; track $index) {
+      <span class="dot" [class.active]="$index === active" (click)="setActive($index)"></span>
+    }
+  </div>
+</section>
